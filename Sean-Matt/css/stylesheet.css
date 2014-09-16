@@ -1,0 +1,40 @@
+html {
+  max-width: 960px;
+  overflow-x:hidden;
+}
+
+body {
+  font-family:arial;
+  margin:0;
+  padding:0;
+}
+
+video, object {
+  top:0;
+  left:0;
+  position:absolute;
+}
+
+#snap {
+  clear: both;
+}
+
+
+
+h1, p, a, .video-title {
+  position:relative;
+  text-align: center;
+  color: white;
+}
+h1.video-title {
+    font-size: 6em;
+}
+
+video-nav {
+  color: #808080;
+  position:relative;
+}
+
+
+
+
