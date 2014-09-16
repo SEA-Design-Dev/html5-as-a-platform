@@ -28,9 +28,11 @@ window.addEventListener("DOMContentLoaded", function() {
     }, errBack);
   }
 
+  // Trigger photo take
+  document.getElementById("snap").addEventListener("click", function() {
+    context.drawImage(video, 0, 0, 640, 480);
+  });
+
 }, false);
 
-// Trigger photo take
-document.getElementById("snap").addEventListener("click", function() {
-  context.drawImage(video, 0, 0, 640, 480);
-});
+
