@@ -1,4 +1,6 @@
-/****** Box Sizing ******/
+/* BASE
+********************/
+/* Box Sizing */
 html {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -6,6 +8,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+/* LAYOUT
+********************/
 
 body {
   background: #39B4BF;
@@ -20,6 +25,9 @@ h1 {
   text-align: center;
 }
 
+/* MODULE
+********************/
+
 video {
   display: block;
   background: #4A4A4A;
@@ -31,10 +39,12 @@ video {
 
 canvas {
   display: block;
+  background: lightgray;
   border: 1.6em solid white;
   border-bottom: 8em solid white;
-  margin: 12em auto 6em;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 12em auto 2em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -48,7 +58,8 @@ p {
 .finger {
   font-size: 3em;
 }
-/* Button Style */
+
+/* Photo Capture Button Styles */
 .btn {
   width: 360px;
   border: 3px solid #fff;
@@ -75,4 +86,12 @@ p {
 .btn:active {
   color: #39B4BF;
   background: #fff;
+}
+/* Save Photo Button Modifications */
+.save-btn {
+  text-align: center;
+  border-radius: 1em;
+  margin-bottom: 4em;
+  width: 260px;
+  padding: 25px 40px;
 }

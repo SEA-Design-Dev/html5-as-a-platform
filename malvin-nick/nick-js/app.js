@@ -1,7 +1,7 @@
-
-// Put event listeners into place
 window.addEventListener("DOMContentLoaded", function() {
+
   // Grab elements, create settings, etc.
+  var downloadButton = document.getElementById("download-button")
   var snapSound = document.getElementById("snap-sound");
   var canvas = document.getElementById("canvas");
   var context = canvas.getContext("2d");
@@ -36,4 +36,14 @@ window.addEventListener("DOMContentLoaded", function() {
     snapSound.play();
     context.drawImage(video, 0, 0, 640, 480);
   });
+
+  downloadButton.addEventListener("click", function(event) {
+    var dataURL = canvas.toDataURL("image/png");
+    downloadButton.href = dataURL;
+  });
+
 }, false);
+
+function downloadImage() {
+
+}
