@@ -1,0 +1,17 @@
+.m-photocapture {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+
+h1 {
+  font-size: 400%;
+  text-align: center;
+}
+
+button[id="snap"] {
+  font-size: 225%;
+  position: relative;
+  left: 25%;
+  right: 25%;
+}

@@ -1,0 +1,11 @@
+body {
+  opacity: 1;
+  font-size: 400%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#audio {
+  text-align: center;
+  margin-left: 80%;
+}
