@@ -1,0 +1,28 @@
+body {
+  background-color: teal;
+  opacity: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 600%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  margin-top: 5%;
+  margin-bottom:5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.6;
+  font-family: 'Roboto', sans-serif;
+}
+
