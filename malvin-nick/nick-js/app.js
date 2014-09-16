@@ -37,6 +37,7 @@ window.addEventListener("DOMContentLoaded", function() {
     context.drawImage(video, 0, 0, 640, 480);
   });
 
+  // Download captured photo
   downloadButton.addEventListener("click", function(event) {
     var dataURL = canvas.toDataURL("image/png");
     downloadButton.href = dataURL;
