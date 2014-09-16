@@ -1,0 +1,41 @@
+/* base */
+html, body, h1, form, fieldset, legend, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 960px;
+  background-color: gray;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.nav-bar {
+  list-style: none;
+}
+
+
+
+/* device-camera */
+
+#snap {
+  width: 20%;
+  margin: 10px 0px 10px 304px;
+  display: block;
+}
+
+.Song-label {
+  font-size: 20px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+  <h1 class="title">Tell us about yourself</h1>
+  <form id='payment'>
+    <fieldset>
+      <legend>Your details</legend>
+      <ol>
+        <li>
+          <label for='name'>Name</label>
+          <input id='name' name='name' type='text' placeholder='First and last name' required autofocus>
+        </li>
+        <li>
+          <label for='email'>Email</label>
+          <input id='email' name='email' type='email' placeholder='john.doe@example.com' required>
+        </li>
+        <li>
+          <label for='phone'>Phone</label>
+          <input id='phone' name='phone' type='tel' placeholder='Eg. +447500000000' required>
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>Address</legend>
+      <ol>
+        <li>
+          <label for='address'>Street</label>
+          <textarea id='address' name='address' rows='5' required></textarea>
+        </li>
+        <li>
+          <label for='city'>City/State</label>
+          <input id='city' name='postcode' type='text' required>
+        </li>
+        <li>
+          <label for='postcode'>Zip Code</label>
+          <input id='postcode' name='postcode' type='text' required>
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>What's better?</legend>
+      <ol>
+        <li>
+          <input id='visa' name='cardtype' type='radio'>
+          <label for='visa'>Angular</label>
+        </li>
+        <li>
+          <input id='amex' name='cardtype' type='radio'>
+          <label for='amex'>Backbone</label>
+        </li>
+        <li>
+          <input id='mastercard' name='cardtype' type='radio'>
+          <label for='mastercard'>Ember</label>
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <button type='submit'>Submit</button>
+    </fieldset>
+  </form>
+  <nav>
+    <a href="index.html">Back to Home</a>
+  </nav>
+</body>
+</html>
