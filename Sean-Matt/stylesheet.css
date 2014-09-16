@@ -33,6 +33,47 @@ h1 {
   font-size: 20px;
 }
 
+/*video*/
+
+.video-page {
+  max-width: 960px;
+  overflow-x:hidden;
+}
+
+.video-body {
+  font-family:arial;
+  margin:0;
+  padding:0;
+}
+
+.video {
+  top:0;
+  left:0;
+  position:absolute;
+}
+
+
+.video-p, .video-a, .video-title {
+  position:relative;
+  text-align: center;
+  color: white;
+}
+.video-title {
+    font-size: 6em;
+}
+
+.video-a, .video-p{
+  font-size: 1em;
+}
+
+.video-nav {
+  color: #808080;
+  position:relative;
+}
+
+
+
+
 
 
 
