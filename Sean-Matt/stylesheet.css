@@ -13,13 +13,18 @@ h1 {
   font-size: 40px;
   text-align: left;
   font-family: sans-serif;
+  margin: 20px 20px;
 }
 
 .nav-bar {
-  list-style: none;
+  margin-left: 20px;
 }
 
+/*home*/
 
+.nav-bar__home {
+  list-style: none;
+}
 
 /* device-camera */
 
@@ -52,12 +57,12 @@ h1 {
   position:absolute;
 }
 
-
 .video-p, .video-a, .video-title {
   position:relative;
   text-align: center;
   color: white;
 }
+
 .video-title {
     font-size: 6em;
 }
