@@ -40,6 +40,10 @@ html, body, h1, form, fieldset, legend, ol, li {
   text-decoration: none;
 }
 
+.top-nav:hover {
+  color: #D9E00D;
+}
+
 video{
   border-radius: 2rem;
   margin-bottom: 3rem;
