@@ -29,6 +29,7 @@ header {
 
 form {
   background-image: url('../media/ipad.png');
+  background-size: 100%;
   border-radius: 0.8rem;
   -moz-border-radius: 0.8rem;
   -webkit-border-radius: 0.8rem;
