@@ -44,7 +44,3 @@ window.addEventListener("DOMContentLoaded", function() {
   });
 
 }, false);
-
-function downloadImage() {
-
-}
