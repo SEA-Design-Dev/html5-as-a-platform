@@ -2,6 +2,7 @@
 // Put event listeners into place
 window.addEventListener("DOMContentLoaded", function() {
   // Grab elements, create settings, etc.
+  var snapSound = document.getElementById("snap-sound");
   var canvas = document.getElementById("canvas");
   var context = canvas.getContext("2d");
   var video = document.getElementById("video");
@@ -31,6 +32,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
   // Trigger photo take
   document.getElementById("snap").addEventListener("click", function() {
+    snapSound.load();
+    snapSound.play();
     context.drawImage(video, 0, 0, 640, 480);
   });
 }, false);

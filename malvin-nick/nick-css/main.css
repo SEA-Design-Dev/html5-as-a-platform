@@ -33,13 +33,13 @@ canvas {
   display: block;
   border: 1.6em solid white;
   border-bottom: 8em solid white;
-  margin: 12em auto;
+  margin: 12em auto 6em;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 p {
   text-align: center;
-  margin: 0.6em auto;
+  margin: 0.7em auto;
   width: 70%;
   font-size: 1.8em;
   line-height: 1.2;
@@ -48,7 +48,7 @@ p {
 .finger {
   font-size: 3em;
 }
-/* General button style (reset) */
+/* Button Style */
 .btn {
   width: 360px;
   border: 3px solid #fff;
