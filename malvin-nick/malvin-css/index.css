@@ -80,11 +80,6 @@ form legend {
   text-shadow: 0 0.1rem 0.1rem white;
 }
 
-form > fieldset > legend:before {
-  content: "Step " counter(fieldset) ": ";
-  counter-increment: fieldset;
-}
-
 form ol li {
   background: #b9cf6a;
   background: rgba(255,255,255,.4);
