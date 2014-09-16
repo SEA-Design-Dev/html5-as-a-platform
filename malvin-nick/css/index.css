@@ -1,0 +1,111 @@
+* {
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+html, body, h1, form, fieldset, legend, ol, li {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  color: black;
+  font-family: 'Architects Daughter', cursive;
+  padding: 2rem;
+}
+
+.video, header {
+  text-align: center;
+}
+
+header {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+}
+
+form {
+  background-image: url('../media/ipad.png');
+  border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  padding: 2rem;
+  width: 59rem;
+}
+
+form fieldset {
+  border: none;
+  margin-bottom: 1rem;
+}
+form fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+form legend {
+  color: #383838;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  text-shadow: 0 0.1rem 0.1rem white;
+}
+
+form > fieldset > legend:before {
+  content: "Step " counter(fieldset) ": ";
+  counter-increment: fieldset;
+}
+
+form ol li {
+  background: #b9cf6a;
+  background: rgba(255,255,255,.4);
+  border-color: #e3ebc3;
+  border-color: rgba(255,255,255,.6);
+  border-style: solid;
+  border-width: 0.2rem;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  line-height: 3rem;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.2rem;
+}
+
+form label {
+  float: left;
+  font-size: 2rem;
+  width: 18rem;
+}
+
+form input {
+  width: 20rem;
+  height: 2rem;
+}
+
+.buttons {
+  text-align: center;
+}
+
+form button {
+  display: inline-block;
+  background: #606060 ;
+  border: none;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -khtml-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 1px;
+  padding: 0.7rem 2.5rem;
+  text-shadow: 0 0.1rem 0.1rem #000000;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background: black;
+  cursor: pointer;
+}

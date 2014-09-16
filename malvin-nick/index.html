@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Enter To Win!</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Architects+Daughter' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <h1>WIN AN IPAD FOR SCHOOL!</h1>
+    </header>
+    <article class="video">
+      <video controls="" poster="media/ipad-video-image.jpg">
+        <source src="media/trailer.mp4" type="video/mp4">
+        <p>This browser does not support the video element.</p>
+      </video>
+    </article>
+    <article>
+      <form class="submit">
+        <fieldset>
+          <legend>Your Details</legend>
+          <ol>
+            <li>
+              <label for="firstName">First name:</label>
+              <input type="text" id="firstName" placeholder="First name" name="name" required autofocus><br>
+            </li>
+            <li>
+              <label for="lastName">Last name:</label>
+              <input type="text" id="lastName" placeholder="Last name" name="name" required>
+            </li>
+            <li>
+              <label for="email">Email address:</label>
+              <input type="email" id="email" placeholder="john@gmail.com" name="email" required>
+            <li>
+              <label for="phone">Phone number:</label>
+              <input type="tel" id="phone" placeholder="eg. xxx-xxx-xxxx" name="phone" required>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset>
+          <legend>Address</legend>
+          <ol>
+            <li>
+              <label for="address">Street:</label>
+              <input type="text" id="address" placeholder="eg. 123 Prize St" name="address" required>
+            </li>
+            <li>
+              <label for='city'>City:</label>
+              <input type='text' id='city' placeholder="eg. Seattle" name='city' required>
+            </li>
+            <li>
+              <label for='state'>State:</label>
+              <input type='text' id='state' placeholder="eg. WA" name='state' required>
+            </li>
+            <li>
+              <label for='postcode'>Post code:</label>
+              <input type='text' id='postcode' placeholder="eg. 98122" name='postcode' required>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset class="buttons">
+          <button type="reset">RESET</button>
+          <button type="submit" id="submit">ENTER!</button>
+        </fieldset>
+      </form>
+    </article>
+  </body>
+</html>
