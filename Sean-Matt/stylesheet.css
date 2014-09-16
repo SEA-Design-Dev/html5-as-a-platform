@@ -1,0 +1,85 @@
+/* base */
+html, body, h1, form, fieldset, legend, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 960px;
+  background-color: gray;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: left;
+  font-family: sans-serif;
+  margin: 20px 0;
+}
+
+/*home*/
+
+.nav-bar__home {
+  list-style: none;
+  padding: 0;
+}
+
+/* device-camera */
+
+#snap {
+  width: 20%;
+  margin: 10px 0px 10px 304px;
+  display: block;
+}
+
+.Song-label {
+  font-size: 20px;
+}
+
+/*video*/
+
+.video-page {
+  max-width: 960px;
+  overflow-x:hidden;
+}
+
+.video-body {
+  font-family:arial;
+  margin:0;
+  padding:0;
+}
+
+.video {
+  top:0;
+  left:0;
+  position:absolute;
+}
+
+.video-p, .video-a, .video-title {
+  position:relative;
+  text-align: center;
+  color: white;
+}
+
+.video-title {
+    font-size: 6em;
+}
+
+.video-a, .video-p{
+  font-size: 1em;
+}
+
+.video-nav {
+  color: #808080;
+  position:relative;
+}
+
+
+
+
+
+
+
+
+
+
