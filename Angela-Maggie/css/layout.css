@@ -38,3 +38,18 @@
     width: 32.2%;
 }
 
+/* NAV */
+#container{
+    width:80%;
+    margin:0 auto;
+}
+.nav--list {
+    display:flex;
+}
+.nav--list-item{
+    text-align:center;
+    flex:1;
+}
+.header-h1{
+    text-align:center;
+}
