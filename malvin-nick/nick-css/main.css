@@ -36,6 +36,7 @@ h1 {
   display: block;
   text-decoration: none;
 }
+
 .top-nav:hover {
   color: #D9E00D;
 }
@@ -99,6 +100,7 @@ p {
   color: #39B4BF;
   background: #fff;
 }
+
 /* Save Photo Button Modifications */
 .save-btn {
   text-align: center;
