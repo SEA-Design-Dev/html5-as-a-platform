@@ -7,23 +7,21 @@ html, body, h1, form, fieldset, legend, ol, li {
 html {
   width: 960px;
   background-color: gray;
+  margin-left: 20px;
 }
 
 h1 {
   font-size: 40px;
   text-align: left;
   font-family: sans-serif;
-  margin: 20px 20px;
-}
-
-.nav-bar {
-  margin-left: 20px;
+  margin: 20px 0;
 }
 
 /*home*/
 
 .nav-bar__home {
   list-style: none;
+  padding: 0;
 }
 
 /* device-camera */
