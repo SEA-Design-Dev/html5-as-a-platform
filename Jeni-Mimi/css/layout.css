@@ -1,0 +1,22 @@
+body {
+  background: url('../img/orange.png');
+  font-family: 'PT Sans', sans-serif;
+}
+
+nav {
+  padding: 0.5em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 1.875em;
+  background: rgba(255,255,255,0.5);
+}
+
+.nav-li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

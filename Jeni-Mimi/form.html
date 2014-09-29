@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form | Keep In Touch</title>
+    <meta name="description" content="Form to help keep in touch.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-li"><a href="index.html">Home</a></li>
+          <li class="nav-li"><a href="video.html">Video</a></li>
+          <li class="nav-li"><a href="form.html">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>KEEP IN TOUCH</h1>
+      <form method="post">
+        <fieldset id="general">
+          <legend>General Information</legend>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text"  placeholder="first and last name" required aria-required="true" autofocus>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email"  placeholder="example@domain.com" required aria-required="true">
+        </fieldset>
+        <fieldset id="optional">
+          <legend>Optional</legend>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="url" maxlength="200">
+            <label for="time">Best Time to Contact</label>
+            <select id="time" name="select">
+              <option value="-">-</option>
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+              <option value="anytime">anytime</option>
+            </select>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea>
+        </fieldset>
+        <button type="submit">SUBMIT</button>
+      </form>
+      <audio src="song.ogg" controls>This browser does not support HTML5 audio.</audio>
+    </main>
+    <script>
+      if (window.localStorage) {
+        var Name = document.getElementById('name');
+        var Email = document.getElementById('email');
+
+        Name.value = localStorage.getItem('name');
+        Email.value = localStorage.getItem('email');
+
+        Name.addEventListener('input', function() {
+          localStorage.setItem('name', Name.value);
+        }, false);
+        Email.addEventListener('input', function() {
+          localStorage.setItem('email', Email.value);
+        }, false);
+      }
+    </script>
+  </body>
+</html>
