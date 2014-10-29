@@ -1,0 +1,19 @@
+.m-header {
+  font-family: 'Poiret One', serif;
+ /* border-bottom: double 0.15em #ccc;*/
+  padding: 2.5em 0 0.75em 0;
+}
+
+.m-header-h1 {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bolder;
+  color: #fff;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.bkg-img__full-page {
+  background: #000 url(../img/sky-background.svg) center center no-repeat;
+  background-size: cover;
+}

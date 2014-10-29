@@ -1,0 +1,77 @@
+.bkg-img__fixed {
+  background: url(../img/DeathtoStock_Wired10.jpg) no-repeat;
+  background-size: cover;
+  height: 120rem;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.hidden-container__large {
+  height: 45rem;
+  text-indent: -9000px;
+}
+
+.pattern__light {
+  background: url(../img/whitediamond.png);
+  height: 40rem;
+}
+
+.align__center {
+  text-align: center;
+  margin: auto 25%;
+}
+
+.align__right {
+  text-align: center;
+  margin-left: 25%;
+}
+
+.hidden-container__small {
+  height: 35rem;
+  text-indent: -9000px;
+}
+
+.see-through__dark {
+  background-color : rgba( 10, 10, 10, 0.75 );
+}
+
+.pattern__dark {
+  background: url(../img/diagmonds.png);
+  height: 20rem;
+}
+
+.pattern__dark p {
+  color: white;
+}
+
+.pattern__dark h1 {
+  padding-top: 4rem;
+  font-size: 3.5rem;
+}
+
+video {
+  border: 2px solid #DBBCA8;
+  background-color : rgba( 10, 10, 10, 0.10 );
+}
+
+.video__window {
+  float: right;
+}
+
+canvas {
+  border: 2px solid #DBBCA8;
+  background-color : rgba( 10, 10, 10, 0.10 );
+}
+
+.canvas__window {
+  margin: 0 auto;
+}
+
+.btn__simple {
+  border-radius: 1rem;
+  border: 1px dashed white;
+  background-color: #DBBCA8;
+  padding: 1rem;
+  color: white;
+}
+

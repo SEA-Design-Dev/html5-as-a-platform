@@ -1,0 +1,35 @@
+html, body {
+  font-family: 'Muli', sans-serif;
+  line-height: 1.7rem;
+}
+
+h1 {
+  font-family: 'Ovo', serif;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #DBBCA8;
+  padding-top: 3rem;
+  padding-bottom: 1.7rem;
+}
+
+p {
+  padding-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+button {
+  font-family: 'Ovo', serif;
+  font-size: 1.2rem;
+}
+
+button:focus, button:active {
+  outline:0;
+  color:white;
+
+}
+
+button:hover {
+  background-color: #D7B7A2;
+  border: 1px solid white;
+  cursor: hand;
+}

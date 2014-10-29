@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+
+.page-bkg__happy {
+  background: url(../img/restaurant_icons.png);
+}
+
+.page-bkg__sad {
+  background: url(../img/stardust.png);
+}
+
+.page-bkg__happy-video {
+  background: url(../img/whitediamond.png);
+
+}

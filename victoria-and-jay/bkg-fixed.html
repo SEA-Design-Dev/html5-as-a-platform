@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Take a Snap</title>
+  <meta name="Take a Photo with your webcam" content="getUserMedia API">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+</head>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/bkg-fixed.css">
+<link href='http://fonts.googleapis.com/css?family=Ovo|Muli' rel='stylesheet' type='text/css'>
+<body>
+  <main>
+    <section class="bkg-img__fixed">
+      <section>
+        <section class="hidden-container__large">baz</section>
+        <section class="pattern__light">
+          <h1 class="align__center">
+            Let's Take a Photo
+          </h1>
+          <p class="align__center">
+            Allow the camera on your device to take the picture. <em> You will need to allow your webcam to be used.</em> Choose "allow" in the broswer pop-up to begin.
+          </p>
+          <section class="section group">
+            <section class="col span_1_of_2">
+                <video class="align__right" id="video" width="420" height="315" autoplay></video>
+                <button id="snap" class="btn__simple align__center">Snap Photo</button>
+            </section>
+            <section class="col span_1_of_2">
+                <canvas id="canvas" width="420" height="315"></canvas>
+            </section>
+          </section>
+        <section class="hidden-container__small see-through__dark">foo</section>
+        <section class="pattern__dark">
+          <h1 class="align__center">
+            Now that's a Photo!!!
+          </h1>
+          <p class="align__center">
+            Photography is the science, art and practice of creating durable images by recording light or other electromagnetic radiation, either chemically by means of a light-sensitive material such as photographic film, or electronically by means of an image sensor.
+          </p>
+        </section>
+      </section>
+    </section>
+</main>
+  <script src="js/bkg-fixed.js"></script>
+</body>
+</html>

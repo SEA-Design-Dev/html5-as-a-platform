@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive/col.css">
+    <link href='http://fonts.googleapis.com/css?family=Ovo|Muli|Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/m-header.css">
+    <link rel="stylesheet" href="css/m-nav.css">
+    <link rel="stylesheet" href="css/v-layout.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+  </head>
+  <body class="bkg-img__full-page">
+    <div class="section group">
+      <header class="m-header">
+        <h1 class="m-header-h1">Welcome to MyMood</h1>
+        <nav class="m-nav">
+          <ul class="m-nav-list">
+            <li class="m-nav-list--item">
+              <a href="v-index.html" class="m-nav-list--link">Home</a>
+            </li>
+            <li class="m-nav-list--item">
+              <a href="bkg-fixed.html" class="m-nav-list--link">Take Your Photo</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  <section class="form-bkg__style">
+    <fieldset>
+      <legend class="form-style__type">Just so we can get to know you, please provide some basic info, and choose a song that fits your mood.</legend>
+      <ul>
+        <li class="form-li__center-align">
+          <label for='name'>Name: </label>
+          <input id='name' class="input-size__long" name='name' type='text' placeholder='Your Name' required autofocus>
+        </li>
+        <li class="form-li__center-align">
+          <label for='email'>Email: </label>
+          <input id='email' class="input-size__long" name='email' type='email' placeholder='example@domain.com' required>
+        </li>
+      </ul>
+    </fieldset>
+
+    <form action="v-mood-happy.html" method="get">
+      <ul>
+        <li class="form-li__center-align">
+          <label for="happy">I am Happy</label>
+          <input type="submit" id="happy_submit" class="mood-submit"></input>
+        </li>
+      </ul>
+    </form>
+
+    <form action="v-mood-sad.html" method="get">
+      <ul>
+        <li class="form-li__center-align">
+          <label for="sad">I am Sad</label>
+          <input type="submit" id="sad_submit" class="mood-submit"></input>
+        </li>
+      </ul>
+    </form>
+  </section>
+
+
+
+    <!-- // <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
+    // <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+    // <script src="js/plugins.js"></script>
+    // <script src="js/main.js"></script> -->
+  </body>
+</html>
