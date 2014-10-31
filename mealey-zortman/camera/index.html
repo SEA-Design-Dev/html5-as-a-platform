@@ -6,51 +6,24 @@
         <title>Live Video Example</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style type="text/css">
-          body {
-            background:#584f44;
-            font-family:"Monaco";
-            color:white;
-            text-align:center;
-          }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
     </head>
     <body>
-      <video id="display" width="640" height="480" autoplay></video>
+      <div class="flash"></div>
+      <section class="container monitor">
+        <div class="counter-container">
+          <h1 class="counter">1</h1>
+        </div>
+        <video id="display" width="533" height="400" autoplay></video>
+      </section>
+      <section>
+        <p>Press enter to take a snap</p>
+        <p class="lite">or spacebar for rapid fire</p>
+      </section>
+      <section class="filmstrip">
+        <canvas height="100" width="100"></canvas>
+      </section>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script>
-        $(document).ready(function(){
-
-
-          var video = $('#display')[0];
-          var videoObj = {
-            video: true
-          };
-
-          var errBack = function(error){
-            console.log(error);
-          }
-
-          // Put video listeners into place
-          if(navigator.getUserMedia) { // Standard
-            navigator.getUserMedia(videoObj, function(stream) {
-              video.src = stream;
-              video.play();
-            }, errBack);
-          } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
-            navigator.webkitGetUserMedia(videoObj, function(stream){
-              video.src = window.webkitURL.createObjectURL(stream);
-              video.play();
-            }, errBack);
-          }
-          else if(navigator.mozGetUserMedia) { // Firefox-prefixed
-            navigator.mozGetUserMedia(videoObj, function(stream){
-              video.src = window.URL.createObjectURL(stream);
-              video.play();
-            }, errBack);
-          }
-
-        });
-      </script>
+      <script src="js/app.js"></script>
     </body>
 </html>
