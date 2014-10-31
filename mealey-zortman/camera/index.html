@@ -1,8 +1,56 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Live Video Example</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+          body {
+            background:#584f44;
+            font-family:"Monaco";
+            color:white;
+            text-align:center;
+          }
+        </style>
+    </head>
+    <body>
+      <video id="display" width="640" height="480" autoplay></video>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
 
-  </body>
+
+          var video = $('#display')[0];
+          var videoObj = {
+            video: true
+          };
+
+          var errBack = function(error){
+            console.log(error);
+          }
+
+          // Put video listeners into place
+          if(navigator.getUserMedia) { // Standard
+            navigator.getUserMedia(videoObj, function(stream) {
+              video.src = stream;
+              video.play();
+            }, errBack);
+          } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+            navigator.webkitGetUserMedia(videoObj, function(stream){
+              video.src = window.webkitURL.createObjectURL(stream);
+              video.play();
+            }, errBack);
+          }
+          else if(navigator.mozGetUserMedia) { // Firefox-prefixed
+            navigator.mozGetUserMedia(videoObj, function(stream){
+              video.src = window.URL.createObjectURL(stream);
+              video.play();
+            }, errBack);
+          }
+
+        });
+      </script>
+    </body>
 </html>
