@@ -27,6 +27,7 @@ var camera = function(){
   // Error function
   function errBack(error){
     console.log(error);
+    $('<p/>').text("No camera access :(").addClass("error").prependTo('.counter-container');
   }
   
   // Last steps to take a picture
@@ -74,10 +75,14 @@ var camera = function(){
     var destX = 0;
     var destY = 0;
 
-    ctx.drawImage(p.video, sourceX, sourceY, sourceWidth, sourceHeight, destX, destY, destWidth, destHeight);
     $(canvas).hide().fadeIn(speed);
     
     flash();
+    
+    setTimeout(function(){
+      ctx.drawImage(p.video, sourceX, sourceY, sourceWidth, sourceHeight, destX, destY, destWidth, destHeight);
+    }, 250)
+    
   }
   
   // Feeds the video camera data
