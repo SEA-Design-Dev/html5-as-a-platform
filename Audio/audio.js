@@ -22,3 +22,14 @@ var vid = document.getElementById("audio")
         vid.currentTime = 0;
         vid.play();
     }
+
+    function pauseplay(){
+        var vid = document.getElementById("audio");
+        if (vid.paused){
+            vid.play();
+        }
+        else{
+            vid.pause();
+        }
+
+    }
