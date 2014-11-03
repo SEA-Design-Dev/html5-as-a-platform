@@ -16,7 +16,11 @@ var camera = function(){
   var p = {
     video: undefined,
     counter: undefined,
-    flash: undefined
+    flash: undefined,
+    sound: {
+      shutter: undefined,
+      beep: undefined
+    }
   }
   
   // Set properties
@@ -32,6 +36,7 @@ var camera = function(){
   
   // Last steps to take a picture
   function flash(){
+    p.sound.shutter[0].play();
     p.counter.hide();
     p.flash.show().fadeOut(300);
     $(p.video).closest('.container').removeClass('live');
@@ -40,17 +45,28 @@ var camera = function(){
   // Count down
   function publicCountDown(){
     // Set the countdown
-    var counter = 2;
+    var counter = 3;
+    
+    // Initial show the counter and live
+    p.counter.show();
     $(p.video).closest('.container').addClass('live');
-    p.counter.show().html(counter + 1);
-    var timer = setInterval(function(){
+    
+    // Function to run every second
+    function tick(){
       if(counter < 1){
         clearInterval(timer);
         publicSnap();
+      } else {
+        p.sound.beep[0].play();
+        p.counter.html(counter);
+        counter--;
       }
-      p.counter.html(counter);
-      counter--;
-    }, 1000);
+    }
+
+    // Run the interval
+    tick(); // Tick right of the gate
+    
+    var timer = setInterval(tick, 1000);
   }
   
   // Take a snapshot
@@ -119,6 +135,10 @@ $(document).ready(function(){
   camera.set('video', $('#display')[0]);
   camera.set('counter', $('.counter'));
   camera.set('flash', $('.flash'));
+  camera.set('sound', {
+    shutter: $('#sound-shutter'),
+    beep: $('#sound-beep')
+  })
   camera.feed();
   
   $('.monitor').click(camera.countdown);
