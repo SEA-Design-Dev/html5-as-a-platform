@@ -1,11 +1,10 @@
 $(document).ready(function(){
   
   // Get all fields
-  var fields = $('input');
+  var fields = $('input, textarea, select');
   
   // Set any previous data
   fields.each(function(){
-    console.log($(this).attr('id'));
     $(this).val(localStorage[$(this).attr('id')]);
   });
   
