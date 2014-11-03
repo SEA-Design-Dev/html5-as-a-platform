@@ -5,8 +5,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="stylesheet" href="../css/normalize.min.css"> -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <link rel="stylesheet" href="forms.css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand|Oswald' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
@@ -16,24 +17,32 @@
 
     <form class="order">
 
-      <fieldset class="style">
+      <fieldset class="order__style">
         <legend>Style</legend>
-        <label for="border" autofocus>Border Style</label>
-        <select class="border-style" id="border" name="style">
-          <option>Film Strip</option>
-          <option>Retro</option>
-          <option>Elegant</option>
-          <option>Modern</option>
-        </select>
-        <label for="effects">Photo Effects</label>
-        <select class="effects" id="effects" name="style">
-          <option>Black and white</option>
-          <option>Sepia</option>
-          <option>Over Exposed</option>
-          <option>Sun Flare</option>
-        </select>
-        <label for="message" tabIndex="0">Write a custom message!</label>
-        <textarea class="message" id='message' name='message' rows='3'></textarea>
+        <ul class="style__list">
+          <li>
+            <label for="border" autofocus>Border Style</label>
+            <select class="border-style" id="border" name="style">
+              <option>Film Strip</option>
+              <option>Retro</option>
+              <option>Elegant</option>
+              <option>Modern</option>
+            </select>
+          </li>
+          <li>
+            <label for="effects">Photo Effects</label>
+            <select class="effects" id="effects" name="style">
+              <option>Black and white</option>
+              <option>Sepia</option>
+              <option>Over Exposed</option>
+              <option>Sun Flare</option>
+            </select>
+          </li>
+          <li>
+            <label for="message" tabIndex="0">Write a custom message!</label>
+            <textarea class="message" id='message' name='message' rows='8' placeholder="This will be printed on the back of your photos..."></textarea>
+          </li>
+        </ul>
       </fieldset>
 
       <fieldset class="prints">
@@ -46,7 +55,7 @@
 <!-- Payment Form -->
 
     <form class="payment" autocomplete="on">
-      <fieldset>
+      <fieldset class="payment__field">
         <legend>Your details</legend>
         <ul>
           <li>
@@ -127,6 +136,7 @@
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="/jquery-1.10.2.min.js"><\/script>')</script>
+      <script src="forms.js" type="text/javascript"></script>
   </body>
 </html>
 

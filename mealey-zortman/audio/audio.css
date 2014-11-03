@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+}
+
+.error {
+  background-image: url('lens.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  text-align: center;
+  margin: 5% auto;
+  width: 50%;
+  height: 70%;
+}
+
+.error__text {
+  color: white;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+  display: inline-block;
+  margin: 20% auto 0;
+}
+
+.error__text p {
+  padding-top: 20%;
+  color: #333;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+

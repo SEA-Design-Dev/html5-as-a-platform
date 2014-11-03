@@ -1,0 +1,70 @@
+
+
+.order {
+  border-radius: 5px;
+  background-color: #eee;
+  display: inline-block;
+  min-width: 50%;
+  max-width: 50%;
+  height: 640px;
+}
+
+.payment {
+  border-radius: 5px;
+  background-color: #eee;
+  float: right;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.order__style {
+  height: 50%;
+}
+
+#qty:required {
+  width: 60px;
+  outline: 1px solid red;
+}
+
+.payment input:required {
+  outline: 1px solid red;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-top: 20px;
+}
+
+.payment, .order {
+  font-family: 'Oswald', sans-serif;
+}
+
+.messsage {
+
+}
+
+fieldset {
+  margin: 5%;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+
+input {
+  margin-top: 10px;
+  border: 1px solid #999;
+  display: block;
+}
+
+textarea {
+  margin: 10px;
+  width:90%;
+  height:150px;
+}
+
+label {
+  margin-right: 7%;
+}
+
