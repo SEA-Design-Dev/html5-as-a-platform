@@ -1,6 +1,6 @@
 // Browser Camera from David Walsh http://davidwalsh.name/browser-camera
 // Canvas Drawing Adapted from bogonko http://stackoverflow.com/questions/2368784/draw-by-mouse-with-html5-canvas
-//http://jsfiddle.net/ArtBIT/kneDX/
+// http://jsfiddle.net/ArtBIT/kneDX/
 
 // Put event listeners into place
 window.addEventListener("DOMContentLoaded", function() {

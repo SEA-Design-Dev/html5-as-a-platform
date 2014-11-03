@@ -6,18 +6,17 @@
     <link href="../main.css" type="text/css"  rel="stylesheet">
   </head>
   <body>
+    <header>
+      <h1>HTML5 Photo</h1>
+    </header>
     <main>
-
-      <header>
-        <h1>HTML5 Photo</h1>
-        <h2>Draw on the Image with your Mouse!</h2>
-      </header>
       <video id="video" width="640" height="480" autoplay></video>
       <button id="snap">Snap Photo</button>
-      <canvas id="canvas" width="640" height="480"></canvas>
-
+      <section class="camera-output">
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <h3>Once it ouputs, Draw on the Still Image with your Mouse!</h3>
+      </section>
     </main>
-
     <script type="text/javascript" src="photo.js"></script>
   </body>
 </html>
