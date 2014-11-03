@@ -1,0 +1,52 @@
+<!DOCUMENT>
+<HTML>
+  <head>
+
+  </head>
+  <body>
+  <form action="">
+      <fieldset class="fieldset">
+        <legend>User Information</legend>
+      <label for="firstname">First Name</label><br>
+        <input type="text" name="firstname" id ="firstname" placeholder="First Name Only"required autofocus><br>
+      <label for="lastname">Last Name</label><br>
+        <input type="text" name="lastname" id ="lastname" placeholder="Last Name Only"required autofocus><br>
+      <label for="password">Password</label><br>
+        <input type="password" name="password" id ="password"><br>
+      <label for="sex">Sex</label><br>
+        <input type="radio" name="sex" value="male" id ="male">
+      <label for="male">Male</label><br>
+        <input type="radio" name="sex" value="female" id ="female">
+      <label for="female">Female</label><br>
+      <label for="dob">Date of Birth</label> <br>
+      <input id="dob" name="dob" type="date" required>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Upload a File</legend>
+      <input type="checkbox" name='document' value="document" id ="uploadDocument">
+      <label for="uploadDocument">Upload a Document</label><br>
+      <input type="checkbox" name="picture" value='picture' id ="uploadPicture">
+      <label for="uploadPicture">Upload a Picture</label><br>
+      <label for="username">Username:</label><input type="text" name="user" id="usesername">
+      <form name="input" action="demo_form_action.asp" method="get"></form>
+      <input type="submit" value="Submit"> <br>
+      <!-->drop down list<-->
+      <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+      </select> <br>
+
+      <textarea rows="10" cols="30">
+      The cat was playing in the garden.
+      </textarea>
+      <form name = "input" action="demo_form_action.asp" method='get'></form>
+      </fieldset>
+</form>
+
+
+  </form>
+  </body>
+</HTML>
