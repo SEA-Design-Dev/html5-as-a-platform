@@ -1,0 +1,17 @@
+
+/* for responsive video
+video {
+  width: 100% ;
+  height: auto;
+}
+*/
+
+pre {
+  display: block;
+  background-color: #EEE;
+  font: 12px monospace;
+  overflow: auto;
+  margin: 10px;
+  max-width: 100%;
+  /*word-wrap: break-word;*/
+}
