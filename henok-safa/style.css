@@ -1,0 +1,63 @@
+video {
+  opacity: 1.0;
+  z-index: 10;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid #ccc;
+}
+
+#button {
+  margin: 10px auto;
+  padding: 10px;
+  background: #362432;
+  color: white;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  display: block;
+}
+
+canvas {
+  position: relative;
+  display: inline;
+  /*-webkit-filter: grayscale(100%);*/
+}
+
+#demov {
+  display: block;
+  position: fixed;
+}
+
+#body {
+  background-color: #1A0000;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+#email {
+  background-color: solid black;
+  color: white;
+}
+
+label {
+  display: block;
+}
+
+textarea, #wholename, #mailaddress {
+  width: 100%;
+}
+
+label {
+  color: white;
+}
+
+#filters {
+  display: inline-block;
+}
