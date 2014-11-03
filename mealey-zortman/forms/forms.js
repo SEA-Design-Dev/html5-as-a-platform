@@ -5,7 +5,10 @@ $(document).ready(function(){
   
   // Set any previous data
   fields.each(function(){
-    $(this).val(localStorage[$(this).attr('id')]);
+    var data = localStorage[$(this).attr('id')];
+    if(data){
+      $(this).val(data);
+    }
   });
   
   // Before we leave, let's set some data
