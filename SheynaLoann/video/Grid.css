@@ -88,7 +88,7 @@ background: url('images/play.png');
 }
 
 .pause{
-background: url('http://www.alexkatz.me/codepen/images/pause.png');
+background: url('images/pause.png');
 }
 
 
@@ -206,6 +206,7 @@ width:100%;
 }
 .span_3_of_8 {
 width:100%;
+}
 }
 
 @media only screen and (max-width: 480px) {
