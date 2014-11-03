@@ -5,4 +5,10 @@ $(document).ready(function(){
     console.log($(this));
     localStorage.setItem($(this).attr('id'), $(this).val());
   });
+  document.getElementById("clear-button").onclick=function(){
+    localStorage.clear();
+  };
+
 });
+
+
