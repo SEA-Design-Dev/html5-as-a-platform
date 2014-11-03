@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src= 'jquery-2.1.1.js'></script>
+    <script src="//api.html5media.info/1.1.8/html5media.min.js"></script>
+  </head>
+  <body id='body'>
+    <audio id='demov' width='320px' height='240px' controls autoplay loop preload='auto'>
+      <source src='https://dl-web.dropbox.com/get/Catacumba_Urubu.mp3?_subject_uid=3606527&w=AABC-Xowmq5VsYTUAeG6PTPvr5Xu5eOmL_JLrBjzsCF1rA' type='audio/mp3'>
+      <source src='https://www.dropbox.com/s/maf3jc8br4qv3mn/Catacumba_Urubu.ogg?dl=0' type='audio/ogg'>
+    </audio>
+    <video id='video' width='640px' height='480px' autoplay></video>
+    <button id='button'>Take A Photo</button>
+    <div id='container'>
+      <div id='filters'>
+        <label for= 'grayscale'>Grayscale</label>
+          <input id='grayscale' type='range' min=0 max=9 value=0>
+        <label for= 'opacity'>Opacity</label>
+          <input id='opacity' type='range' min=0 max=9 value=10>
+      </div>
+      <canvas id='photo' width='320px' height='240px'></canvas>
+      <form id='email' action='mailto:your@email.com' method='post'>
+        <h1>Like Your Picture? Send It To A Friend!</h1>
+        <fieldset>
+          <label for='wholename'>Name:</label>
+          <input id='wholename' name='wholename' type='text' required>
+
+          <label for='email'>Email:</label>
+          <input id='mailaddress' name='mailaddress' type='email' required>
+
+          <label for='message'>Message:</label>
+          <textarea id='message' name='message' cols=25 rows=5 required></textarea>
+        </fieldset>
+      </form>
+    </div>
+    <video id='demoa' src='http://video.webmfiles.org/elephants-dream.webm' controls=''></video>
+    <script type="text/javascript" src='cam.js'></script>
+  </body>
+</html>
