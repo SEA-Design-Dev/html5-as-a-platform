@@ -17,29 +17,21 @@ a {
   max-width: 65%;
 }
 
-.butt1 {
-  border-radius: 2px;
+.butt {
+  border-radius: 3px;
   font-size: 1.5em;
   background-color: rgba(250,250,250,0.7);
   font-family: 'Quicksand', sans-serif;
   border: 1px solid;
-  padding: 5px 74px;
   width: 50px;
   margin-right: 15px;
   border: 1px solid silver;
   color: #555;
+  padding: 1% 3%;
 }
 
-.butt2 {
-  border-radius: 2px;
-  font-size: 1.5em;
-  background-color: rgba(250,250,250,0.7);
-  font-family: 'Quicksand', sans-serif;
-  border: 1px solid silver;
-  padding: 5px 15px;
-  width: 50px;
-  margin-left: 15px;
-  color: #555;
+.butt:first-child {
+  padding: 1% 13%;
 }
 
 .buttons {
@@ -62,4 +54,9 @@ a {
   margin: -45% auto 0;
   opacity: .7;
 }
+
+.butt:hover {
+  background-color: rgba(256, 256, 256, 1);
+}
+
 
