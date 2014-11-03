@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sheyna and Loann</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+  </head>
+
+  <body>
+
+    <!--header-->
+
+    <header role="banner" class="main-header col span_3_of_3">
+      <nav class="main-nav">
+        <h1>Music Swap</h1>
+        <ul>
+          <li><a href="index.html">Latest News</a></li>
+          <li><a href="#">Collaborations</a></li>
+          <li><a href="#">New Artists</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="Profile.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="main-nav col span_3_of_3">
+      <h2>Welcome! Make your profile</h2>
+    </header>
+
+    <!--main-->
+
+    <main class="profile section group">
+
+      <!--form-->
+
+      <form id="createProfile" class="stacked col span_5_of_8">
+        <fieldset>
+          <legend>Your details</legend>
+          <small class="block"><span class="color1">&#42;</span> Required Fields</small>
+
+          <ul class="field width-lessThanHalf inline-block">
+            <li>
+              <input type="text" pattern=".+" required placeholder="First Name &#42;" class="persisted-text" name="first-name" id="first-name" autofocus>
+              <label for="first-name">First Name <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+
+          <ul class="field width-lessThanHalf inline-block">
+            <li>
+              <input type="text" pattern=".+" required placeholder="Last Name &#42;" class="persisted-text" name="last-name" id="last-name" autofocus>
+              <label for="last-name">Last Name <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+
+          <ul class="field width-100percent">
+            <li>
+              <input type="text" pattern=".+" required placeholder="Address &#42;" class="persisted-text" name="address" id="address" autofocus>
+              <label for="address">Address <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+
+          <ul class="field width-half inline-block">
+            <li>
+              <input type="text" pattern=".+" required placeholder="City &#42;" class="persisted-text" name="city" id="city" autofocus>
+              <label for="city">City <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+          <ul class="field width-smallerThanHalf inline-block">
+            <li>
+              <input type="text" pattern=".+" required placeholder="Zip Code &#42;" class="persisted-text" name="zip-code" id="zip-code" autofocus>
+              <label for="zip-code">Zip Code <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+          <ul class="field width-smallerThanHalf inline-block">
+            <li>
+              <select required>
+                <option selected disabled value="">State</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PE</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+              <small><span class="color1"> &#42;</span></small>
+            </li>
+          </ul>
+
+          <ul class="field width-largerThanHalf">
+            <li>
+              <!-- pattern="^(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$" -->
+              <input type="tel" pattern=".+" required placeholder="Phone Number &#42;" class="persisted-text" name="phone-number" id="phone-number" autofocus>
+              <label for="phone-number">Phone: (XXX)-XXX-XXXX <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Lorem Ipsum</legend>
+          <ul class="field width-largerThanHalf">
+            <li>
+              <input type="text" pattern=".+" required placeholder="Question" class="persisted-text" name="question" id="question" autofocus>
+              <label for="question">Question</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Create Login</legend>
+          <ul class="field width-largerThanHalf">
+            <li>
+              <input type="email" pattern=".+" required placeholder="Email &#42;" class="persisted-text" name="email" id="email" autofocus>
+              <label for="email">Email <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+          <ul class="field width-largerThanHalf">
+            <li>
+              <input type="text" pattern=".+" required placeholder="Username &#42;" class="persisted-text" name="username" id="username" autofocus>
+              <label for="username">Username <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+          <ul class="field width-largerThanHalf">
+            <li>
+              <!-- pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" -->
+              <input type="password" pattern=".+" required placeholder="Password &#42;" class="persisted-text" name="password1" id="password1" autofocus>
+              <label for="password1">Password <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+          <!-- <small>Passwords must include at least one capital letter, lower case letter and number.</small> -->
+          <ul class="field width-largerThanHalf">
+            <li>
+              <input type="password" pattern=".+" required placeholder="Reenter Password &#42;" class="persisted-text" name="password2" id="password2" autofocus>
+              <label for="password2">Reenter Password <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit" class="submit">Submit</button>
+
+      </form>
+
+      <!--profile image column at right-->
+
+      <section class="col span_3_of_8">
+        <h2 hidden>Profile Picture</h2>
+
+        <figure id="picArea" class="profilePic"></figure>
+
+        <p>Select an image file:<br />
+        <input type="file" class="no-border" id="fileInput"></p>
+
+        <p>Don't have a photo?<br />
+          Easy! <a href="Camera.html">Take one instantly</a></p>
+
+    </main>
+
+    <br class="breaker" />
+
+    <!--footer-->
+
+    <section class="col span_3_of_3">
+      <footer class="main-footer section group">
+        <footnote><strong>Students: Sheyna and Loann</strong><footnote>
+      </footer>
+    </section>
+
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/localStorage.js"></script>
+    <script src="js/imageFileReader.js"> </script>
+
+  </body>
+</html>

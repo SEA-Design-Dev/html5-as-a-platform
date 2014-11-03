@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sheyna and Loann</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+  </head>
+
+  <body>
+
+    <!--header-->
+
+    <header class="main-header col span_3_of_3">
+      <nav class="main-nav">
+        <h1>Music Swap</h1>
+        <ul>
+          <li><a href="index.html">Latest News</a></li>
+          <li><a href="#">Collaborations</a></li>
+          <li><a href="#">New Artists</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="Profile.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="main-nav col span_3_of_3">
+      <h2>Take a Profile Picture</h2>
+    </header>
+
+    <!--main-->
+
+    <main class="profile section group">
+
+      <!--profile image column at right-->
+
+      <section class="camera col span_1_of_3">
+        <h2 hidden>Input</h2>
+        <div id="webcam" class="cameraPic"></div>
+      </section>
+
+      <section class="camera col span_1_of_3">
+        <h2 hidden>Output</h2>
+        <canvas id="canvas" class="cameraPic"></canvas>
+
+        <menu>
+          <button id="takeSnapshot" class="center">Take Snapshot</button>
+        </menu>
+      </section>
+
+    </main>
+
+    <br class="breaker" />
+
+    <!--footer-->
+
+    <section class="col span_3_of_3">
+      <footer class="main-footer section group">
+        <footnote><strong>Students: Sheyna and Loann</strong><footnote>
+      </footer>
+    </section>
+
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/getUserMedia.js"> </script>
+    <script src="js/snapShot.js"> </script>
+
+  </body>
+</html>
