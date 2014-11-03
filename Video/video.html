@@ -7,7 +7,7 @@
     <!--Embeded an YouTube Video with examples of external control:Pause, Play, Skip, Fast Forward and Rewind -->
     <section class="ControlVid">
       <video id = "video1" width="320" height="240" controls>
-        <source src="panda.mp4" type="video/mp4">
+        <source id ="panda" src="panda.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
       </video><br>
       <button onclick="playVid()" type="button">Play Video</button>
@@ -16,6 +16,8 @@
       <button onclick="frameChange(-2)" type="button"> Rewind </button>
       <button onclick="sneeze()" type="button">Sneeze</button>
       <button onclick="restart()" type="button">Restart</button><br>
+      <button onclick="change()" type="button">Change To BEAR!</button><br>
+
     </section>
     <!--vimeo using inframe -->
 

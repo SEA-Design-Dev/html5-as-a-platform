@@ -28,8 +28,6 @@
   }).resize();
 
 });
-
-var vid = document.getElementById("video1")
     function pauseVid(){
         var vid = document.getElementById("video1");
         vid.pause();
@@ -53,3 +51,8 @@ var vid = document.getElementById("video1")
         vid.currentTime = 0;
         vid.play();
     }
+
+function change(){
+  document.getElementById("panda").src = "bear.mp4";
+  document.getElementById("video1").load();
+}
