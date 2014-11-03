@@ -12,6 +12,7 @@ We also add external buttons for
   * Fast Forward
   * Rewind
   * Restart
+  * Switch to a video of a bear
   * A Fun button for panda sneezing.
 
 
