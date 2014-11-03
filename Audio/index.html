@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p> Audio</p>
+        <audio id = "audio" width="320" height="240" controls>
+        <source src="Audio Converts/FillOutSomeForms.mp3" type="audio/mp3">
+        <source src="Audio Converts/FillOutSomeForms.ogg" type="audio/mp3">
+        <source src="Audio Converts/FillOutSomeForms.wav" type="audio/mp3">
+        </audio>
+        <br>
+        <button onclick="playVid()" type="button">Play Audio</button>
+        <button onclick="pauseVid()" type="button">Pause Audio</button>
+        <button onclick="frameChange(2)" type="button">Fast Forward</button>
+        <button onclick="frameChange(-2)" type="button"> Rewind </button>
+        <button onclick="restart()" type="button">Restart</button><br>
+
+</body>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src=jquery.min.js></script>
+        <script type="text/javascript" src=jquery.js></script>
+        <script type="text/javascript" src=jquery-ui.min.js></script>
+</html>
