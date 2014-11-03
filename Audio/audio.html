@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <head>
+    <title>HTML5 Audio Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <p> Audio</p>
+    <audio id = "audio" width="320" height="240" controls>
+    <source src="Audio Converts/FillOutSomeForms.mp3" type="audio/mp3">
+    <source src="Audio Converts/FillOutSomeForms.ogg" type="audio/mp3">
+    <source src="Audio Converts/FillOutSomeForms.wav" type="audio/mp3">
+    </audio>
+    <br>
+    <button onclick="playVid()" type="button">Play Audio</button>
+    <button onclick="pauseVid()" type="button">Pause Audio</button>
+    <button onclick="frameChange(2)" type="button">Fast Forward</button>
+    <button onclick="frameChange(-2)" type="button"> Rewind </button>
+    <button onclick="restart()" type="button">Restart</button><br>
+
+</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src=audio.js></script>
+</html>
