@@ -84,11 +84,11 @@ outline:none;
 }
 
 .play{
-background: url('images/play.png');
+background: url('../images/play.png');
 }
 
 .pause{
-background: url('images/pause.png');
+background: url('../images/pause.png');
 }
 
 
