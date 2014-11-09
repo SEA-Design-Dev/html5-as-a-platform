@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Adapted from http://tangledindesign.com/how-to-create-a-contact-form-using-html5-css3-and-php/ -->
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <title>HTML5 Email Form</title>
+    <!-- <link href="main.css" type="text/css"  rel="stylesheet"> -->
+    <link href="email_form.css" type="text/css"  rel="stylesheet">
+    <link href="../main.css" type="text/css"  rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>HTML5 Email Contact Form</h1>
+      </header>
+      <form id="contact-form" method="post" action="email_form.php">
+        <label for="name">Name</label>
+        <input id ="name" name="name" type="text" placeholder="Full name" required autofocus>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Example@Domain.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" type="text" placeholder="Your Message" value=""></textarea>
+        <input id="submit" name="submit" type="submit" value="Submit" role="button">
+
+      </form>
+
+    </main>
+    <script type="text/javascript" src="email_form.js"></script>
+  </body>
+</html>
