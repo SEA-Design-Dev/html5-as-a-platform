@@ -1,0 +1,23 @@
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+input, textarea {
+  width:200px;
+  border-radius: 2px;
+}
+
+textarea {
+  height: 240px;
+}
+
+#submit {
+  display: block;
+  width: 60px;
+  margin-top: 15px;
+}

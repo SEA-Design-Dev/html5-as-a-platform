@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head>
+    <title>Video Example</title>
+    <link href="../main.css" type="text/css"  rel="stylesheet">
+  </head>
+  <body>
+    <!--Embeded an YouTube Video with examples of external control:Pause, Play, Skip, Fast Forward and Rewind -->
+    <section class="ControlVid">
+      <div class="clearfix">
+        <video id = "video1" width="320" height="240" controls>
+          <source id ="panda" src="panda.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+        </video>
+      </div>
+      <button onclick="playVid()" type="button">Play Video</button>
+      <button onclick="pauseVid()" type="button">Pause Video</button>
+      <button onclick="frameChange(2)" type="button">Fast Forward</button>
+      <button onclick="frameChange(-2)" type="button"> Rewind </button>
+      <button onclick="sneeze()" type="button">Sneeze</button>
+      <button onclick="restart()" type="button">Restart</button>
+      <button onclick="change()" type="button">Change To BEAR!</button>
+    </section>
+    <!--vimeo using inframe -->
+    <iframe id="video2" src="http://player.vimeo.com/video/110735092?title=0&amp;byline=0&amp;portrait=0&amp;" width="320" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src=video.js></script>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <title>Jade Conversion Examples</title>
+    <link href="../main.css" type="text/css"  rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Jade Examples</h1>
+    </header>
+    <section class="GalenJade">
+      <h2>Galen and Nick Mealy's Semantic HTML5</h2>
+      <p>Converted to Jade with <a href='http://html2jade.org/'>Html2Jade</a></p>
+      <pre>
+        <code>
+!!! 5
+html(lang='en')
+  head
+    title Shape Blobbing in CSS | CSS Tricks
+  body
+    header
+      .logo
+        a(href='css-tricks.com') CSS-Tricks
+      section.search-bar(role='search')
+        form#search-bar(action='search/')
+          img(alt='search', src='search-icon')
+          input(type='text', name='q')
+          input(type='submit', role='input', value='Search')
+      section.ad
+        a(href='teamtreehouse.com')
+          img(role='img', alt='Treehouse_ad.jpg', src='teamtreehouse.com/logo')
+    nav.main-nav(role='navigation')
+      ul
+        li(role='link')
+          a(href='css-tricks.com/blog') Blog
+        li(role='link')
+          a(href='css-tricks.com/videos') Videos
+        li(role='link')
+          a(href='css-tricks.com/almanac') Almanac
+        li(role='link')
+          a(href='css-tricks.com/snippets') Snippets
+        li(role='link')
+          a(href='css-tricks.com/forums') Forums
+        li(role='link')
+          a(href='css-tricks.com/thelodge') The Lodge
+    main(role='main')
+      article
+        header.article-header
+          h1(tabindex='0', role='heading') Shape Blobbling in CSS
+          h2
+            | Published
+            time(datetime='2014-10-28 00:00') October 28, 2014
+            | by Chris Coyer
+        section
+          p
+            | We just covered
+            a(href='css-tricks.com/shape_morphing') shape morphing
+            | in SVG, where shapes change from one to another. Let's look at shapes that blob into each other! You know, that gooey squishy blobby effect like droplets of
+            a(href='wikipedia.org/mercury') mercury
+            | on a surface.
+          figure(role='img')
+            img(alt='Mercury.jpg', src='css-tricks.com/mercury.jpg')
+          h3(tabindex='0')
+            | The trick is fairly simple, use filter to BOTH add blur and contrast to an element
+          p
+            | The blur obvious makes the element blurry, the contrast fights against the blur, preferring stark changes in color. If you contrast enough, you're left with a (fairly) sharp looking shape again.
+          figure(role='img')
+            img(alt='Blur_Figure.jpg', src='css-tricks.com/blur.jpg')
+          pre.
+            \n
+
+          h3(tabindex='0') Browser Support
+          p Not IE
+        footer.article-footer
+          h4(tabindex='0') Share on
+          ul
+            li
+              a(href='Twitter.com/share') Twitter
+            li
+              a(href='facebook.com/share') Facebook
+            li
+              a(href='googleplus.com/share') Google+
+    aside
+      section.treehouse-aside
+        img(role='img', alt='TeamTreehouse.jpg', src='teamtreehouse.com/logo.jpg')
+        p Treehouse, so great
+      section.poll-aside
+        h2(tabindex='0', role='heading') One or Two?
+        form(method='post', action='index.php')
+          ul(role='radiogroup')
+            li
+              label
+                input(type='radio', role='radio', value='1', name='poll_1')
+                | One
+            li
+              label
+                input(type='radio', role='radio', value='2', name='poll_1')
+                | Two
+          input(type='submit', role='button', value='vote')
+    footer
+      section.linkage
+        h1(tabindex='0', role='heading') Linkage
+        ul
+          li(role='link')
+            a(href='css-tricks.com/contact') Contact
+          li(role='link')
+            a(href='css-tricks.com/advertise') Advertise
+          li(role='link')
+            a(href='css-tricks.com/License') License
+          li(role='link')
+            a(href='css-tricks.com/archives') Archives
+          li(role='link')
+            a(href='css-tricks.com/store') Store
+      section.Colophon
+        h1(tabindex='0', role='heading') Colophon
+        p
+          | CSS-Tricks* is created, written by, and maintained by
+          a(role='link', href='chriscoyier.net') Chris Coyier
+          | . It is built on WordPress, hosted by Media Temple and MaxCDN. Fonts are Gotham Rounded, Noto Sans, and Menlo.
+      section.Disclaimer
+        p *May or may not contain any actual "CSS" or "Tricks".
+        </code>
+      </pre>
+    </section>
+    <section class="WendyJade">
+      <h2>Wendy, Loann, and Levi's Semantic Html5</h2>
+      <p>Converted to Jade with <a href='http://html2jade.org/'>Html2Jade</a></p>
+      <pre>
+        <code>
+!!! 5
+html(lang='en')
+  head
+    title Wendy's Semantic Html5
+  body
+    nav.main-nav(role='navigation')
+      img(src='#', alt='Forbes Logo')
+      a(hre='#')
+        h4 New Posts
+        p
+      a(hre='#')
+        h4 Most Popular
+        p
+      a(hre='#')
+        h4 Lists
+        p
+      a(hre='#')
+        h4 Video
+        p
+      form
+        input(type='submit', name='search')
+        button
+      button(name='login')
+    // Drop down navigation
+    nav.pop-nav(role='navigation')
+      section.pop-nav__chann
+        ul
+          li
+            a(href='#', alt='Business') Business
+          li
+            a(href='#', alt='Investing') Investing
+          li
+            a(href='#', alt='Technology') Technology
+          li
+            a(href='#', alt='Entrepreneurs') Entrepreneurs
+      section.pop-nav__chann__bus
+        ul
+          li
+            a(href='#', alt='Asia Outlook') Asia Outlook
+          li
+            a(href='#', alt='Asia Outlook') Asia Outlook
+          li
+            a(href='#', alt='Asia Outlook') Asia Outlook
+          li
+            a(href='#', alt='Asia Outlook') Asia Outlook
+      section.pop-nav__chann__inv
+        ul
+          li
+            a(href='#', alt='Advisor Network') Advisor Network
+          li
+            a(href='#', alt='Advisor Network') Advisor Network
+          li
+            a(href='#', alt='Advisor Network') Advisor Network
+          li
+            a(href='#', alt='Advisor Network') Advisor Network
+      section.pop-nav__chann__tech
+        ul
+          li
+            a(href='#', alt='Century Link Choice') Century Link Choice
+          li
+            a(href='#', alt='Century Link Choice') Century Link Choice
+          li
+            a(href='#', alt='Century Link Choice') Century Link Choice
+          li
+            a(href='#', alt='Century Link Choice') Century Link Choice
+    // Login nav
+    nav.log-nav
+      a(href='#') 21 Rock-Solid Dividend Payers
+      a(href='#') Log in
+      a(href='#') Sign up
+      a(href='#') Connect
+      a(href='#')
+        img(src='#', alt='Facebook')
+      a(href='#')
+        img(src='#', alt='Twitter')
+      a(href='#')
+        img(src='#', alt='LinkdIn')
+      a(href='') Help
+    // Top ad block
+    section.ad
+    // Main content
+    main.main
+      h1 Top Stories
+      img(src='#', alt='Main Image')
+      h3 Paper Profits: Meet The King Of Personal Hygiene Products
+      p
+        | Li Shufu is rare among today’s Chinese entrepreneurs for taking on auto manufacturing, a sector dominated by state enterprises and multinationals.
+      // Cite block
+      section.author
+        img(src='#', alt='Image of author')
+        strong Russell Flannery
+        | , Forbes Staff
+    // Regional Stories
+    aside.regional-col
+      nav.reg-nav
+        a(href='#') U.S.
+        a(href='#') Europe
+        a(href='#') Asia
+      section.story-cite
+        a(href='#')
+          h6 Fed Ends QE And Perks Up Labor Market Outlook
+        cite.cite-SS
+          img(src='#', alt='Image of author')
+          strong Samantha Sharf
+          | , Forbes Staff
+      section.story-cite
+        a(href='#')
+          h6 An Answer From Sanofi: What About Genzyme?
+        cite.cite-MH
+          img(src='#', alt='Image of author')
+          strong Mathew Herper
+          | , Forbes Staff
+      section.story-cite
+        a(href='#')
+          h6 Apple Pay Rival And Walmart-Backed MCX Hacked, User Emails Snatched
+        cite.cite-RM
+          img(src='#', alt='Image of author')
+          strong Ryan Mac
+          | , Forbes Staff
+    // Social media links
+    nav.soc-nav
+      p Follow Forbes
+      a(href='#')
+        img(src='#', alt='facebook icon')
+      a(href='#')
+        img(src='#', alt='twitter icon')
+      a(href='#')
+        img(src='#', alt='LinkdIn icon')
+      a(href='#')
+        img(src='#', alt='Google Plus icon')
+      a(href='#')
+        img(src='#', alt='Youtube icon')
+        </code>
+      </pre>
+    </section>
+  </body>
+</html>
