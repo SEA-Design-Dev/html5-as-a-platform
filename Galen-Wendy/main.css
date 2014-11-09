@@ -1,5 +1,4 @@
-
-/* for responsive video
+/* for responsive video (Currently unused)
 video {
   width: 100% ;
   height: auto;
@@ -13,5 +12,22 @@ pre {
   overflow: auto;
   margin: 10px;
   max-width: 100%;
-  /*word-wrap: break-word;*/
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
 }
