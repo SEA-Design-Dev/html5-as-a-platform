@@ -20,7 +20,7 @@ nav  ul  li:hover{
 /*Form*/
 
 form{
-  bottom: 10.5rem;
+  bottom: 10.9rem;
   left: 32rem;
   position: fixed;
   width: 100%;
@@ -79,7 +79,7 @@ button{
   position: absolute;
   right: 36.5rem;
   text-align: center;
-  top: 26rem;
+  top: 25rem;
   width: 10%;
   z-index: 9999;
 }
@@ -129,7 +129,7 @@ h3{
 .tagLine{
   color: white;
   font-size: 5rem;
-  margin-top: 30rem;
+  margin-top: 28rem;
   text-align: center;
   z-index: 100;
 }
