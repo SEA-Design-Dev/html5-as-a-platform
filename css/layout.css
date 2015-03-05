@@ -33,6 +33,20 @@ header[role="banner"]{
   cursor: pointer;
 }
 
+#alert-box{
+  background-color: green;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.5rem;
+  text-align: center;
+  visibility: hidden;
+  width: 50%;
+  z-index: 200;
+}
+
 section[role="region"]{
   margin-top: -20rem;
 }
