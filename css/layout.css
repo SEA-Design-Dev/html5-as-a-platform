@@ -47,7 +47,7 @@ header[role="banner"]{
   z-index: 200;
 }
 
-section[role="region"]{
+section{
   margin-top: -20rem;
 }
 
