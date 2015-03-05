@@ -1,0 +1,140 @@
+nav  ul{
+  bottom: 0;
+  color: white;
+  position: absolute;
+  right: 0;
+}
+
+nav  ul  li{
+  display: inline;
+  font-size: 1.5rem;
+  margin: 0.2rem 0.5rem 0 0;
+  padding: 0.5rem;
+}
+nav  ul  li:hover{
+  color: black;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+/*Form*/
+
+form{
+  bottom: 8rem;
+  left: 32rem;
+  position: fixed;
+  width: 100%;
+  visibility: hidden;
+}
+
+select,
+input,
+label{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+fieldset{
+  background-color: rgba(198, 229, 198, 0.93);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgb(86, 100, 90);
+  padding-bottom: 0.2rem;
+  width: 20%;
+}
+
+fieldset p{
+  text-align: center;
+  margin: 0.5rem 0 0.5rem 0.3rem;
+}
+
+legend{
+  background: white;
+  border-top-right-radius: 0.5rem;
+  color: rgb(18, 18, 39);
+  padding: 0.6rem;
+}
+
+
+input[type="submit"]{
+  margin-top: 0.5rem;
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+}
+
+#show-R-Form{
+  background-color: rgb(127, 171, 141);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgb(86, 100, 90);
+  color: azure;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 36.5rem;
+  text-align: center;
+  top: 22rem;
+  width: 10%;
+  z-index: 9999;
+}
+#show-R-Form:hover{
+  box-shadow: 0 0 1rem rgb(86, 100, 90);;
+  color: black;
+  cursor: pointer;
+  transition: color 0.5s, box-shadow 0.5s;
+}
+
+video#bgvid {
+  color: white;
+  background-size: cover;
+  bottom: 0;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+/*  top: 2rem;*/
+  width: auto;
+  z-index: -100;
+}
+
+.serviceInfo{
+  background-color: rgb(36, 52, 41);
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.serviceInfo h1{
+  color: white;
+  font-size: 2.2rem;
+  margin: 0.6rem 0.3rem;
+  text-align: center;
+}
+
+h3{
+  color: azure;
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+  text-align: center;
+}
+
+.tagLine{
+  color: white;
+  font-size: 5rem;
+  margin-top: 30rem;
+  text-align: center;
+  z-index: 100;
+}
+
+.orangeB{
+  color: orange;
+}
+
