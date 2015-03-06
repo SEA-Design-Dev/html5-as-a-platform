@@ -9,62 +9,8 @@ body{
   -webkit-background-size:cover;
 }
 
-header[role="banner"]{
-  background-color: rgba(127, 171, 141, 0.96);
-  box-shadow: 0 0 0.9rem rgb(86, 100, 90);
-  left: 0rem;
-  margin: 0rem;
-  position: fixed;
-  top: 0rem;
-  width: 100%;
-  z-index: 10000;
-}
-
-.main-logo{
-  color: white;
-  font-size: 3rem;
-  padding: 0 0 0.5rem 0.4rem;
-}
-.main-logo:hover{
-  cursor: pointer;
-}
-
 section{
   margin-top: -20rem;
-}
-
-.el-footer{
-  background-color: rgba(127, 171, 141, 1);
-  bottom: 0rem;
-  left: 0rem;
-  padding: 0.1rem 0 0.1rem 0;
-  position: fixed;
-  width: 100%;
-  z-index: 10000;
-}
-
-.el-footer p{
-  color: white;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-nav  ul{
-  bottom: 0rem;
-  color: white;
-  position: absolute;
-  right: 0rem;
-}
-
-nav  ul  li{
-  display: inline;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-}
-nav  ul  li:hover{
-  color: black;
-  cursor: pointer;
-  transition: color 0.5s;
 }
 
 /*Form*/
@@ -158,6 +104,7 @@ video{
   color: white;
   font-size: 2.2rem;
   height: 10rem;
+  padding-top: 0.5rem;
   position: absolute;
   text-align: center;
   width: 100%;
