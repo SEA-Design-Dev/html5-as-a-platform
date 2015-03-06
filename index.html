@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt a Pet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Roboto' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main>
+      <h1>Adopt a Pet</h1>
+      <section>
+        <h1 class='sectionTitle'>Pet Adoption Form</h1>
+        <form>
+          <fieldset class="border" >
+            <legend>Adopter Information</legend>
+            <ul>
+              <li>
+                <label for="first-name">First Name <span class='red-alert'>*</span></label>
+                <input type="text" id="first-name" required="required">
+              </li>
+              <li>
+                <label for="last-name">Last Name <span class='red-alert'>*</span></label>
+                <input type="text" id="last-name" required="required">
+              </li>
+              <li>
+                <label for="age">Age <span class='red-alert'>*</span></label>
+                <input type="number" id="age" required="required">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="border">
+            <legend>Home Information</legend>
+            <ul>
+              <li>
+                <label for="rent-own">Rent or Own? <span class='red-alert'>*</span></label>
+                <select id="rent-own" required="required">
+                  <option value="">Select one...</option>
+                  <option value="rent">Rent</option>
+                  <option value="own">Own</option>
+                </select>
+              </li>
+            </li>
+              <label for="yard">Fenced Yard? <span class='red-alert'>*</span></label>
+              <select id="yard" required="required">
+                <option value="">Select one...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </li>
+            <li>
+              <label for="pets">Other pets? <span class='red-alert'>*</span></label>
+              <select id="pets" required="required">
+                <option value="">Select one...</option>
+                <option value="no">No</option>
+                <option value="dogs">Yes, dog(s)</option>
+                <option value="cats">Yes, cat(s)</option>
+                <option value="both">Yes, dog(s) &amp; cat(s)</option>
+              </select>
+            </li>
+          </ul>
+          </fieldset>
+          <fieldset class="border">
+            <legend>Adoption Preferences</legend>
+            <ul>
+              <li>
+                <label for="type">Type <span>*</span></label>
+                <select id="type" required="required">
+                  <option value="">Select one...</option>
+                  <option value="any">Any</option>
+                  <option value="dog">Dog</option>
+                  <option value="cat">Cat</option>
+                  <option value="small-furry">Small &amp; furry</option>
+                </select>
+              </li>
+              <li>
+                <label for="breed">Breed</label>
+                <input type="text" id="breed">
+              </li>
+              <li>
+                <label for="age">Age</label>
+                <select id="age">
+                  <option>Any</option>
+                  <option>Baby</option>
+                  <option>Young</option>
+                  <option>Adult</option>
+                  <option>Senior</option>
+                </select>
+              </li>
+              <li>
+                <label for="gender">Gender</label>
+                <select id="gender">
+                  <option>Either</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Find my pet!</button>
+        </form>
+      </section>
+      <section class="videoContainer">
+        <h1 class='sectionTitle'>How to Adopt a Dog</h1>
+        <video controls="" src="https://vid.ly/h6n7s6?content=video" id="video-tech" preload="metadata"></video>
+        <p>Video from Petfinder.com</p>
+      </section>
+    </main>
+  </body>
+</html>
