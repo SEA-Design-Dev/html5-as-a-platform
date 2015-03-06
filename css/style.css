@@ -1,4 +1,4 @@
-body {
+body{
   background: rgb(36, 52, 41);
   background-attachment: fixed;
   background-position: center;
@@ -12,10 +12,10 @@ body {
 header[role="banner"]{
   background-color: rgba(127, 171, 141, 0.96);
   box-shadow: 0 0 0.9rem rgb(86, 100, 90);
-  left: 0;
-  margin: 0;
+  left: 0rem;
+  margin: 0rem;
   position: fixed;
-  top: 0;
+  top: 0rem;
   width: 100%;
   z-index: 10000;
 }
@@ -29,28 +29,14 @@ header[role="banner"]{
   cursor: pointer;
 }
 
-#alert-box{
-  background-color: green;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  font-size: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3.5rem;
-  text-align: center;
-  visibility: hidden;
-  width: 50%;
-  z-index: 200;
-}
-
 section{
   margin-top: -20rem;
 }
 
 .el-footer{
   background-color: rgba(127, 171, 141, 1);
-  bottom: 0;
-  left: 0;
+  bottom: 0rem;
+  left: 0rem;
   padding: 0.1rem 0 0.1rem 0;
   position: fixed;
   width: 100%;
@@ -64,10 +50,10 @@ section{
 }
 
 nav  ul{
-  bottom: 0;
+  bottom: 0rem;
   color: white;
   position: absolute;
-  right: 0;
+  right: 0rem;
 }
 
 nav  ul  li{
@@ -107,7 +93,6 @@ fieldset{
   border-bottom-right-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   box-shadow: 0 0 2rem rgb(86, 100, 90);
-  padding-bottom: 0.2rem;
   width: 20%;
 }
 
@@ -131,6 +116,7 @@ input[type="submit"]{
 button{
   display: block;
   margin: 0 auto;
+  margin-bottom: 0.2rem;
   margin-top: 0.4rem;
 }
 
@@ -168,7 +154,7 @@ video{
 
 .serviceInfo{
   background-color: rgb(36, 52, 41);
-  bottom: 0;
+  bottom: 0rem;
   color: white;
   font-size: 2.2rem;
   height: 10rem;
