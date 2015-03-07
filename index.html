@@ -10,13 +10,13 @@
     <link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header role="banner" class="feat-box">
+    <header class="full-view">
       <h1 class="main-logo">My Vidz</h1>
       <nav>
         <ul role="list">
-          <li>Menu</li>
-          <li>About</li>
-          <li>Login</li>
+          <li class="inline-list">Menu</li>
+          <li class="inline-list">About</li>
+          <li class="inline-list">Login</li>
         </ul>
       </nav>
     </header>
@@ -26,21 +26,21 @@
     <section>
       <h1 class="tagLine">Have Access to your favorite Videos</h1>
       <div role="button">
-        <p id="show-R-Form">Register Now</p>
+        <p id="show-R-Form" class="registerForm">Register Now</p>
       </div>
       <video id="bgvid" autoplay="autoplay" muted="muted">
         <source src="videos/video.mp4" type="video/mp4">
-        <p>Sorry, this video isn't compatible with your Browser. Please Download Chrome.</p>
+        <p class="white">Sorry, this video isn't compatible with your Browser. Please Download Chrome.</p>
       </video>
     </section>
     <section class="serviceInfo">
       <hgroup>
         <h1>Be the first to know what your favorite Artist is up to.</h1>
-        <h3 class="info-tag">Sign up to recieve updates whenever a new video is posted to our Website.<br> You can also recieve free <span class="orangeB">downloads</span> and access to more <span class="orangeB">videos</span>.</h3>
+        <h3 class="info-tag">Sign up to recieve updates whenever a new video is posted to our Website.<br> You can also recieve free <span class="orange">downloads</span> and access to more <span class="orange">videos</span>.</h3>
       <hgroup>
     </section>
-    <form id="register-form">
-      <fieldset role="main">
+    <form id="register-form" class="full-view">
+      <fieldset>
         <legend>Register For Free</legend>
           <label for="first-name">First Name</label>
           <input type="text" id="first-name" required aria-required="true" maxlength="15">
@@ -61,8 +61,8 @@
           <button id="hide-form">Exit</button>
       </fieldset>
     </form>
-    <footer class="el-footer feat-box">
-      <p>&copy;Mini Website. All Rights Reserved</p>
+    <footer class="full-view">
+      <p>&copy;Mini Website</p>
     </footer>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/main.js"></script>

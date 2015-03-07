@@ -1,7 +1,7 @@
 .main-logo{
   color: white;
   font-size: 3rem;
-  padding: 0 0 0.5rem 0.4rem;
+  padding: 0.1rem 0.4rem;
 }
 
 section{
@@ -11,10 +11,9 @@ section{
 /*Form*/
 
 form{
-  bottom: 10.9rem;
+  bottom: 11.5rem;
   left: 32rem;
   position: fixed;
-  width: 100%;
   visibility: hidden;
 }
 
@@ -25,7 +24,6 @@ label{
   margin-left: auto;
   margin-right: auto;
   padding: 0.3rem;
-  text-align: center;
 }
 
 fieldset{
@@ -37,16 +35,12 @@ fieldset{
   width: 20%;
 }
 
-fieldset p{
-  text-align: center;
-  margin: 0.5rem 0 0.5rem 0.3rem;
-}
-
 legend{
   background: white;
   border-top-right-radius: 0.5rem;
   color: rgb(18, 18, 39);
   padding: 0.6rem;
+  text-align: left;
 }
 
 
@@ -61,7 +55,7 @@ button{
   margin-top: 0.4rem;
 }
 
-#show-R-Form{
+.registerForm{
   background-color: rgb(127, 171, 141);
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem rgb(86, 100, 90);
@@ -69,20 +63,18 @@ button{
   font-size: 1.5rem;
   position: absolute;
   right: 36.5rem;
-  text-align: center;
   top: 25rem;
   width: 10%;
   z-index: 9999;
 }
-#show-R-Form:hover{
+.registerForm:hover{
   box-shadow: 0 0 1rem rgb(86, 100, 90);;
   color: black;
   cursor: pointer;
-  transition: color 0.5s, box-shadow 0.5s;
+  transition: color 0.5s;
 }
 
 video{
-  color: white;
   background-size: cover;
   bottom: 0rem;
   min-height: 100%;
@@ -101,7 +93,6 @@ video{
   height: 10rem;
   padding-top: 0.5rem;
   position: absolute;
-  text-align: center;
   width: 100%;
 }
 
@@ -109,19 +100,24 @@ video{
   color: azure;
   font-size: 1.2rem;
   margin-left: 0.3rem;
-  text-align: center;
 }
 
 .tagLine{
   color: white;
   font-size: 5rem;
   margin-top: 28rem;
-  text-align: center;
   z-index: 100;
 }
 
-.orangeB{
+.white{
+  color: white;
+}
+
+.orange{
   color: orange;
 }
 
+.full-view{
+  width: 100%;
+}
 

@@ -1,42 +1,38 @@
 body{
   background: rgb(36, 52, 41);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: 'Gruppo', cursive;
-  margin: 0rem;
-  -moz-background-size:cover;
-  -webkit-background-size:cover;
+  text-align: center;
 }
 
-header[role="banner"]{
+header{
   background-color: rgba(127, 171, 141, 0.96);
   box-shadow: 0 0 0.9rem rgb(86, 100, 90);
   left: 0rem;
   position: fixed;
+  text-align: left;
   top: 0rem;
   z-index: 10000;
 }
 
-nav  ul{
+[role="list"]{
   bottom: 0rem;
   color: white;
   position: absolute;
   right: 0rem;
 }
 
-nav  ul  li{
+.inline-list{
   display: inline;
   font-size: 1.5rem;
   padding: 0.5rem;
 }
-nav  ul  li:hover{
+.inline-list:hover{
   color: black;
   cursor: pointer;
   transition: color 0.5s;
 }
 
-.el-footer{
+footer{
   background-color: rgba(127, 171, 141, 1);
   bottom: 0rem;
   left: 0rem;
@@ -45,12 +41,8 @@ nav  ul  li:hover{
   z-index: 10000;
 }
 
-.el-footer p{
+footer p{
   color: white;
   font-size: 1.2rem;
-  text-align: center;
 }
 
-.feat-box{
-  width: 100%;
-}
