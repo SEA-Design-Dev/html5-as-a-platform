@@ -20,7 +20,7 @@
   .registerButton{
     right: 0;
     width: auto;
-    margin-right: 9.1em;
+    margin-right: 9.4em;
     padding: 0.6em;
   }
 
@@ -54,6 +54,10 @@
   footer{
     height: 2em;
   }
+
+  .orange-text{
+    font-size: 1.4em;
+  }
 }
 /*MOBILE*//*MOBILE*//*MOBILE*//*MOBILE*/
 @media (max-width: 600px){
@@ -70,12 +74,13 @@
   }
 
   .tagLine{
+    color: black;
     font-size: 2.5rem;
   }
 
   .registerButton{
     right: 0;
-    margin-right: 4.6em;
+    margin-right: 4.4em;
     width: auto;
     padding: 0.6em;
   }
