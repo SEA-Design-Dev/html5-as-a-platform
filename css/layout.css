@@ -1,48 +1,66 @@
 body{
-  background: rgb(36, 52, 41);
+  background: white;
   font-family: 'Gruppo', cursive;
   text-align: center;
 }
 
 header{
   background-color: rgba(127, 171, 141, 0.96);
-  box-shadow: 0 0 0.9rem rgb(86, 100, 90);
-  left: 0rem;
-  position: fixed;
+  left: 0;
   text-align: left;
-  top: 0rem;
-  z-index: 10000;
-}
-
-[role="list"]{
-  bottom: 0rem;
-  color: white;
-  position: absolute;
-  right: 0rem;
-}
-
-.inline-list{
-  display: inline;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-}
-.inline-list:hover{
-  color: black;
-  cursor: pointer;
-  transition: color 0.5s;
+  top: 0;
+  position: fixed;
+  z-index: 100;
 }
 
 footer{
-  background-color: rgba(127, 171, 141, 1);
-  bottom: 0rem;
-  left: 0rem;
-  padding: 0.1rem 0 0.1rem 0;
+  background-color: rgb(127, 171, 141);
+  bottom: 0;
+  left: 0;
+  padding: 0.1em 0 0.1em 0;
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
 }
 
 footer p{
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+}
+
+.center-box{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-container{
+  position: absolute;
+  background-size: cover;
+  bottom: 0rem;
+  min-height: 100%;
+  min-width: 100%;
+  right: 0rem;
+  width: auto;
+}
+
+.account-page{
+  overflow: hidden;
+  color: black;
+  position: relative;
+  top: 5em;
+}
+
+.smallVideo{
+  min-width: 30%;
+  width: 30%;
+}
+
+.share-box{
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 20%;
+}
+
+.video-box{
+  margin-top: 10em;
 }
 

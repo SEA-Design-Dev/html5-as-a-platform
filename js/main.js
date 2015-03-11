@@ -13,3 +13,4 @@ $('#hide-form').on('click', function(e){
   $('#register-form').fadeOut();
   e.preventDefault();
 });
+

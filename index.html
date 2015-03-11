@@ -3,61 +3,62 @@
   <head>
     <meta charset="UTF-8">
     <title>MyVidz</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/state.css">
     <link rel="stylesheet" type="text/css" href="css/module.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaq.css">
     <link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="full-view">
-      <h1 class="main-logo">My Vidz</h1>
+      <h1 class="main-logo white-text">My Vidz</h1>
       <nav>
-        <ul role="list">
+        <ul class="white-text">
           <li class="inline-list">Menu</li>
           <li class="inline-list">About</li>
           <li class="inline-list">Login</li>
         </ul>
       </nav>
     </header>
-    <div id="alert-box">
-      <h4 role="alert">Register to get free email notifications</h4>
-    </div>
-    <section>
-      <h1 class="tagLine">Have Access to your favorite Videos</h1>
-      <div role="button">
-        <p id="show-R-Form" class="registerForm">Register Now</p>
+    <section class="over-video">
+      <div >
+        <h1 class="tagLine">Have Access to your favorite Videos</h1>
+        <div role="button">
+          <p id="show-R-Form" class="registerButton">Register Now</p>
+        </div>
+        <video class="content-container" id="bgvid" autoplay="autoplay" muted="muted">
+          <source src="videos/video.mp4" type="video/mp4">
+          <p class="white-text">Sorry, this video isn't compatible with your Browser. Please Download Chrome.</p>
+        </video>
       </div>
-      <video id="bgvid" autoplay="autoplay" muted="muted">
-        <source src="videos/video.mp4" type="video/mp4">
-        <p class="white">Sorry, this video isn't compatible with your Browser. Please Download Chrome.</p>
-      </video>
     </section>
     <section class="serviceInfo">
       <hgroup>
         <h1>Be the first to know what your favorite Artist is up to.</h1>
-        <h3 class="info-tag">Sign up to recieve updates whenever a new video is posted to our Website.<br> You can also recieve free <span class="orange">downloads</span> and access to more <span class="orange">videos</span>.</h3>
+        <h3 class="info-tag">Sign up to recieve updates whenever a new video is posted to our Website.<br> You can also recieve free <span class="orange-text">downloads</span> and access to more <span class="orange-text">videos</span>.</h3>
       <hgroup>
     </section>
-    <form id="register-form" class="full-view">
+    <form action="success.html" id="register-form" class="full-view" method="get">
       <fieldset>
         <legend>Register For Free</legend>
           <label for="first-name">First Name</label>
-          <input type="text" id="first-name" required aria-required="true" maxlength="15">
+          <input type="text" id="first-name" required aria-required="true">
           <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" required aria-required="true" maxlength="10">
+          <input type="text" id="last-name" required aria-required="true">
           <label for="email">E-mail</label>
           <input type="email" id="email" required aria-required="true">
           <label for="password">Password</label>
           <input type="password" id="password" require aria-required="true">
           <label for="phone">Telephone #</label>
-          <input type="tel" id="phone" required aria-required="true" maxlength="13">
+          <input type="tel" id="phone" required aria-required="true">
           <p>Optional:</p>
           <select name="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
-          <input  type="submit" name="Register">
+          <input type="submit" name="Register">
           <button id="hide-form">Exit</button>
       </fieldset>
     </form>
