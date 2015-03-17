@@ -11,3 +11,6 @@ $('#hide-form').on('click', function(e){
   e.preventDefault();
 });
 
+$('#show-drop-menu').on('click', function(){
+  $('#drop-menu').slideToggle();
+});

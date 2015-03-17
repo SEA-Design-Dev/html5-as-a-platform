@@ -1,16 +1,7 @@
 .main-logo{
+  cursor: pointer;
   margin-left: 0.1em;
   font-size: 3.2rem;
-}
-
-ul{
-  float: right;
-}
-
-.inline-list{
-  display: inline;
-  font-size: 1.5em;
-  padding: 0.5em;
 }
 
 .absolute-title{
@@ -20,14 +11,18 @@ ul{
   height: 15em;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.inline-list{
+  display: inline;
+}
+
 form{
   bottom: 11rem;
   left: 32rem;
   position: fixed;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 select,
@@ -149,3 +144,44 @@ video{
   margin-bottom: 1em;
   text-align: left;
 }
+/**/
+
+.nav-list{
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  margin-top: 3.2em;
+  background: rgb(131, 173, 144);
+  overflow: hidden;
+  display: none;
+  top: 0em;
+  left: 0;
+  box-sizing: border-box;
+  padding: .3em;
+}
+
+.drop-list{
+  text-align: left;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.droplist li{
+  margin-left: .1em;
+  z-index: 100;
+}
+
+.drop-list li:hover{
+  background: rgb(50, 76, 58);
+  cursor: pointer;
+  margin-left: .2em;
+  color: white;
+  transition: margin-left .2s;
+}
+
+.menu-btn{
+  font-size: .5em;
+  margin-right: 1em;
+}
+
+
