@@ -12,22 +12,20 @@
     <link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header class="full-view">
+    <header class="full-width">
       <h1 class="main-logo white-text">My Vidz</h1>
       <nav>
-        <ul class="white-text">
+        <ul>
           <li class="inline-list">Menu</li>
           <li class="inline-list">About</li>
           <li class="inline-list">Login</li>
         </ul>
       </nav>
     </header>
-    <section class="over-video">
+    <section class="absolute-title">
       <div >
         <h1 class="tagLine">Have Access to your favorite Videos</h1>
-        <div role="button">
-          <p id="show-R-Form" class="registerButton">Register Now</p>
-        </div>
+        <button id="show-R-Form" class="registerButton">Register Now</button>
         <video class="content-container" id="bgvid" autoplay="autoplay" muted="muted">
           <source src="videos/video.mp4" type="video/mp4">
           <p class="white-text">Sorry, this video isn't compatible with your Browser. Please Download Chrome.</p>
@@ -37,10 +35,11 @@
     <section class="serviceInfo">
       <hgroup>
         <h1>Be the first to know what your favorite Artist is up to.</h1>
-        <h3 class="info-tag">Sign up to recieve updates whenever a new video is posted to our Website.<br> You can also recieve free <span class="orange-text">downloads</span> and access to more <span class="orange-text">videos</span>.</h3>
+        <h3 class="info-tag">Sign up to recieve updates whenever a new video is posted to our Website.</h3>
+        <h3> You can also recieve free <span class="orange-text">downloads</span> and access to more <span class="orange-text">videos</span>.</h3>
       <hgroup>
     </section>
-    <form action="success.html" id="register-form" class="full-view" method="get">
+    <form action="success.html" id="register-form" class="full-width" method="get">
       <fieldset>
         <legend>Register For Free</legend>
           <label for="first-name">First Name</label>
@@ -62,7 +61,7 @@
           <button id="hide-form">Exit</button>
       </fieldset>
     </form>
-    <footer class="full-view">
+    <footer class="full-width">
       <p>&copy;Mini Website</p>
     </footer>
     <script src="js/jquery-1.11.2.min.js"></script>

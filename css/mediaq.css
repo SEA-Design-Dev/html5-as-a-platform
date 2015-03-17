@@ -1,12 +1,6 @@
-*{
-  transition: all 0.2s;
-}
-
 /*DESKTOP*//*DESKTOP*//*DESKTOP*//*DESKTOP
 @media (max-width: 900px){
 }
-
-
 /*TABLET*//*TABLET*//*TABLET*//*TABLET*/
 @media (max-width: 1100px){
   ul{
@@ -18,9 +12,8 @@
   }
 
   .registerButton{
-    right: 0;
-    width: auto;
-    margin-right: 9.4em;
+    font-size: 1.5em;
+    width: 40%;
     padding: 0.6em;
   }
 
@@ -79,9 +72,7 @@
   }
 
   .registerButton{
-    right: 0;
-    margin-right: 4.4em;
-    width: auto;
+    width: 70%;
     padding: 0.6em;
   }
 
