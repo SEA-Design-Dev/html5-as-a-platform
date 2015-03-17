@@ -1,9 +1,6 @@
-var showForm = function(){
-  var registerForm = document.getElementById('register-form');
-  registerForm.style.visibility = "visible";
-};
-
-document.getElementById('show-R-Form').addEventListener('click', showForm, false);
+$('#show-R-Form').on('click', function() {
+  $('#register-form').removeClass('hidden');
+});
 
 $('#show-R-Form').on('click', function(){
   $(this).fadeOut();

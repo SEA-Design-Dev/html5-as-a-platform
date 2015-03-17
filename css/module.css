@@ -24,6 +24,9 @@ form{
   bottom: 11rem;
   left: 32rem;
   position: fixed;
+}
+
+.hidden {
   visibility: hidden;
 }
 
