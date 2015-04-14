@@ -1,0 +1,188 @@
+.main-logo{
+  cursor: pointer;
+  margin-left: 0.1em;
+  font-size: 3.2rem;
+}
+
+.absolute-title{
+  margin-top: -20rem;
+  background: rgba(255, 255, 255, 0.13);
+  width: 100%;
+  height: 15em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.inline-list{
+  display: inline;
+}
+
+form{
+  bottom: 11rem;
+  left: 32rem;
+  position: fixed;
+  z-index: 100;
+}
+
+select,
+input,
+label{
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2rem;
+  padding: 0.3rem;
+  z-index: 500;
+}
+
+fieldset{
+  background-color: rgba(198, 229, 198, 0.93);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgb(86, 100, 90);
+  width: 20%;
+}
+
+legend{
+  background: white;
+  border-top-right-radius: 0.5rem;
+  color: rgb(18, 18, 39);
+  padding: 0.6rem;
+  text-align: left;
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.registerButton{
+  border: none;
+  background-color: rgb(127, 171, 141);
+  border-radius: 0.5rem;
+  color: azure;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+  position: relative;
+  padding: .2em;
+  width: 20%;
+  z-index: 99;
+}
+
+video{
+  background-size: cover;
+  bottom: 0rem;
+  min-height: 100%;
+  min-width: 100%;
+  right: 0rem;
+  width: auto;
+  z-index: -100;
+}
+
+.serviceInfo{
+  background-color: rgb(36, 52, 41);
+  bottom: 0rem;
+  color: white;
+  font-size: 2.2rem;
+  height: 11rem;
+  padding-top: 0.5rem;
+  position: absolute;
+  width: 100%;
+}
+
+.info-tag{
+  color: azure;
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+.tagLine{
+  color: white;
+  font-size: 5rem;
+  margin-top: 28rem;
+  z-index: 100;
+}
+
+/**/
+.white-text{
+  color: white;
+}
+
+.orange-text{
+  font-size: 1.5em;
+  color: orange;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.greeting{
+  margin-left: 0.1em;
+  font-size: 2.5em;
+}
+
+.small-icon{
+  width: 15%;
+}
+
+.share-title{
+  font-size: 1.5em;
+  margin-right: 0.1em;
+}
+
+.video-box p{
+  font-size: 1.5em;
+  margin-left: 5%;
+  margin-bottom: 1em;
+  text-align: left;
+}
+/**/
+
+.nav-list{
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  margin-top: 3.2em;
+  background: rgb(131, 173, 144);
+  overflow: hidden;
+  display: none;
+  top: 0em;
+  left: 0;
+  box-sizing: border-box;
+  padding: .3em;
+}
+
+.drop-list{
+  text-align: left;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.droplist li{
+  margin-left: .1em;
+  z-index: 100;
+}
+
+.drop-list li:hover{
+  background: rgb(50, 76, 58);
+  cursor: pointer;
+  margin-left: .2em;
+  color: white;
+  transition: margin-left .2s;
+}
+
+.menu-btn{
+  font-size: .5em;
+  margin-right: 1em;
+}
+
+

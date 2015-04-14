@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MyVidz</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/state.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaq.css">
+    <link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header class="full-width">
+      <h1 class="main-logo"><span id="showDropMenu" class="menu-btn">&#9776;</span>My Vidz</h1>
+    </header>
+    <nav id="dropMenu" class="nav-list">
+      <ul class="drop-list">
+        <li>Menu</li>
+        <li>About</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+    <section class="absolute-title">
+      <div >
+        <h1 class="tagLine">Have Access to your favorite Videos</h1>
+        <button id="showForm" class="registerButton">Register Now</button>
+        <video class="content-container" id="bgvid" autoplay="autoplay" muted="muted">
+          <source src="videos/video.mp4" type="video/mp4">
+          <p class="white-text">Sorry, this video isn't compatible with your Browser. Please Download Chrome.</p>
+        </video>
+      </div>
+    </section>
+    <section class="serviceInfo">
+      <hgroup>
+        <h1>Be the first to know what your favorite Artist is up to.</h1>
+        <h3 class="info-tag">Sign up to recieve updates whenever a new video is posted to our Website.</h3>
+        <h3> You can also recieve free <span class="orange-text">downloads</span> and access to more <span class="orange-text">videos</span>.</h3>
+      <hgroup>
+    </section>
+    <form action="success.html" id="register-form" class="full-width hidden" method="get">
+      <fieldset>
+        <legend>Register For Free</legend>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" required aria-required="true">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" required aria-required="true">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required aria-required="true">
+          <label for="password">Password</label>
+          <input type="password" id="password" require aria-required="true">
+          <label for="phone">Telephone #</label>
+          <input type="tel" id="phone" required aria-required="true">
+          <p>Optional:</p>
+          <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <input type="submit" name="Register">
+          <button id="hide-form">Exit</button>
+      </fieldset>
+    </form>
+    <footer class="full-width">
+      <p>&copy;Mini Website</p>
+    </footer>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

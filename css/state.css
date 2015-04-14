@@ -1,0 +1,14 @@
+.inline-list:hover{
+  color: black;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.registerButton:hover{
+  box-shadow: 0 0 1rem rgb(86, 100, 90);;
+  color: black;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+
