@@ -23,6 +23,7 @@ form{
   bottom: 11rem;
   left: 32rem;
   position: fixed;
+  z-index: 100;
 }
 
 select,
