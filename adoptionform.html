@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>SLU Animal Shelter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="css/application.css">
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash|Quicksand|Josefin+Slab' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main>
+      <header class="mainHeader">
+      <h1 class="logoFont">SLU Animal Shelter</h1>
+      <nav class="floatRight">
+        <ul>
+          <li class="inlineBlock"><a class="navLinks"href="index.html">Home</a></li>
+          <li class="inlineBlock"><a class="navLinks"href="adoptionform.html"> | </a></li>
+          <li class="inlineBlock"><a class="navLinks"href="">Available Pets</a></li>
+        </ul>
+      </nav>
+    </header>
+      <section class="contentBox catBackground">
+        <h1 class='headerText'>Pet Adoption Form</h1>
+        <form>
+          <fieldset class="border" >
+            <legend>Adopter Information</legend>
+            <ul>
+              <li>
+                <label for="first-name">First Name <span class='red-alert'>*</span></label>
+                <input type="text" id="first-name" required="required">
+              </li>
+              <li>
+                <label for="last-name">Last Name <span class='red-alert'>*</span></label>
+                <input type="text" id="last-name" required="required">
+              </li>
+              <li>
+                <label for="age">Age <span class='red-alert'>*</span></label>
+                <input type="number" id="age" required="required">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="border">
+            <legend>Home Information</legend>
+            <ul>
+              <li>
+                <label for="rent-own">Rent or Own? <span class='red-alert'>*</span></label>
+                <select id="rent-own" required="required">
+                  <option value="">Select one...</option>
+                  <option value="rent">Rent</option>
+                  <option value="own">Own</option>
+                </select>
+              </li>
+            </li>
+              <label for="yard">Fenced Yard? <span class='red-alert'>*</span></label>
+              <select id="yard" required="required">
+                <option value="">Select one...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </li>
+            <li>
+              <label for="pets">Other pets? <span class='red-alert'>*</span></label>
+              <select id="pets" required="required">
+                <option value="">Select one...</option>
+                <option value="no">No</option>
+                <option value="dogs">Yes, dog(s)</option>
+                <option value="cats">Yes, cat(s)</option>
+                <option value="both">Yes, dog(s) &amp; cat(s)</option>
+              </select>
+            </li>
+          </ul>
+          </fieldset>
+          <fieldset class="border">
+            <legend>Adoption Preferences</legend>
+            <ul>
+              <li>
+                <label for="type">Type <span>*</span></label>
+                <select id="type" required="required">
+                  <option value="">Select one...</option>
+                  <option value="any">Any</option>
+                  <option value="dog">Dog</option>
+                  <option value="cat">Cat</option>
+                  <option value="small-furry">Small &amp; furry</option>
+                </select>
+              </li>
+              <li>
+                <label for="breed">Breed</label>
+                <input type="text" id="breed">
+              </li>
+              <li>
+                <label for="age">Age</label>
+                <select id="age">
+                  <option>Any</option>
+                  <option>Baby</option>
+                  <option>Young</option>
+                  <option>Adult</option>
+                  <option>Senior</option>
+                </select>
+              </li>
+              <li>
+                <label for="gender">Gender</label>
+                <select id="gender">
+                  <option>Either</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Find my pet!</button>
+        </form>
+      </section>
+      <footer class="contentBox grayBackground">
+        <p>511 Boren Ave N. Seattle, WA 98108</p>
+        <p>(206) 111-2222</p>
+      </footer>
+    </main>
+  </body>
+</html>

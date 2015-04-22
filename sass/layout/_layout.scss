@@ -1,0 +1,41 @@
+.floatRight {
+  float: right;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.spanAll {
+  width: 100%;
+}
+
+.headerText {
+  font-size: 3.2em;
+  margin-bottom: .5em;
+}
+
+.catBackground {
+  background-image: url(images/catbackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contentBox {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+.bannerText {
+  position: absolute;
+  left: 10rem;
+  top: 15rem;
+  color: #EEE;
+  font-size: 3em;
+}
+.centered {
+  margin: 0px auto;
+  display:block;
+}
